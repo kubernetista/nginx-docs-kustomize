@@ -1,6 +1,6 @@
 # Readme.md
 
-Install
+Install nginx to serve the documentation.
 
 ```sh
 #
