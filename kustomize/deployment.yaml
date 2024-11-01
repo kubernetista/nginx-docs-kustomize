@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: nginx-docs
   namespace: docs
 spec:
   replicas: 1
@@ -19,10 +19,10 @@ spec:
         ports:
         - containerPort: 80
         volumeMounts:
-        - name: nginx-index
+        - name: nginx-docs-index
           mountPath: /usr/share/nginx/html/index.html
           subPath: index.html
       volumes:
-      - name: nginx-index
+      - name: nginx-docs-index
         configMap:
-          name: nginx-index
+          name: nginx-docs-index
