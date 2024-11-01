@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-index
+  namespace: docs
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Welcome to Nuvola!</title>
+    </head>
+    <body>
+        <h1>This is the Nuvola index page.</h1>
+    </body>
+    </html>
